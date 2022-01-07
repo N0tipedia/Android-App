@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Help">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/about_developer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:dividerHeight="2dp"
+                android:fontFamily="@font/black_ops_one"
+                android:includeFontPadding="true"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="About Developer"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#000000"
+                android:orientation="vertical"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:paddingBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/image1"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:contentDescription="rohit's photo"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/rohit" />
+
+                <TextView
+                    android:id="@+id/linkedindata1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/emaildata1"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_toEndOf="@+id/linkedin1"
+                    android:fontFamily="@font/black_ops_one"
+                    android:text="R0hitraj"
+                    android:textColor="#F4F0F0"
+                    app:layout_constraintStart_toEndOf="@+id/linkedin1"
+                    app:layout_constraintTop_toBottomOf="@+id/emaildata1" />
+
+                <TextView
+                    android:id="@+id/namedata1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="12dp"
+                    android:layout_toEndOf="@+id/name1"
+                    android:fontFamily="@font/black_ops_one"
+                    android:text="Rohit Raj"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textColor="#FFFFFF"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.177"
+                    app:layout_constraintStart_toEndOf="@+id/name1"
+                    app:layout_constraintTop_toBottomOf="@+id/image1" />
+
+                <TextView
+                    android:id="@+id/emaildata1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/namedata1"
+                    android:layout_marginStart="64dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_toEndOf="@+id/email1"
+                    android:fontFamily="@font/black_ops_one"
+                    android:text="rohit3374@gmail.com"
+                    android:textColor="#FFFFFF"
+                    app:layout_constraintStart_toEndOf="@+id/email1"
+                    app:layout_constraintTop_toBottomOf="@+id/namedata1" />
+
+                <TextView
+                    android:id="@+id/linkedin1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/email1"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/black_ops_one"
+                    android:text="Linkedin"
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    android:textColor="#FFFFFF"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/email1" />
+
+                <TextView
+                    android:id="@+id/email1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/name1"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/black_ops_one"
+                    android:text="Email"
+
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    android:textColor="#FFFFFF"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/name1" />
+
+                <TextView
+                    android:id="@+id/name1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/black_ops_one"
+                    android:text="Name"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textColor="#FFFFFF"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/image1" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#000000"
+                android:orientation="vertical"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:paddingBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/image3"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:contentDescription="snehil's photo"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/snehil" />
+
+                <TextView
+                    android:id="@+id/linkedindata3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/emaildata3"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_toEndOf="@+id/linkedin3"
+                    android:fontFamily="@font/black_ops_one"
+                    android:text="snehil"
+                    android:textColor="#FFFDFD"
+                    app:layout_constraintStart_toEndOf="@+id/linkedin3"
+                    app:layout_constraintTop_toBottomOf="@+id/emaildata3" />
+
+                <TextView
+                    android:id="@+id/namedata3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="12dp"
+                    android:layout_toEndOf="@+id/name3"
+                    android:fontFamily="@font/black_ops_one"
+                    android:text="Snehil"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textColor="#FFFFFF"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.177"
+                    app:layout_constraintStart_toEndOf="@+id/name3"
+                    app:layout_constraintTop_toBottomOf="@+id/image3" />
+
+                <TextView
+                    android:id="@+id/emaildata3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/namedata3"
+                    android:layout_marginStart="64dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_toEndOf="@+id/email3"
+                    android:fontFamily="@font/black_ops_one"
+                    android:text="secvm@protonmail.ch"
+                    android:textColor="#FFFFFF"
+                    app:layout_constraintStart_toEndOf="@+id/email3"
+                    app:layout_constraintTop_toBottomOf="@+id/namedata3" />
+
+                <TextView
+                    android:id="@+id/linkedin3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/email3"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/black_ops_one"
+                    android:text="linkedin"
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    android:textColor="#FFFFFF"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/email3" />
+
+                <TextView
+                    android:id="@+id/email3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/name3"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/black_ops_one"
+                    android:text="email"
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    android:textColor="#FFFFFF"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/name3" />
+
+                <TextView
+                    android:id="@+id/name3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/black_ops_one"
+                    android:text="Name"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textColor="#FFFFFF"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/image3" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
